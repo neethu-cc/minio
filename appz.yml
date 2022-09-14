@@ -1,0 +1,20 @@
+app:
+    name: minio
+    code: MINIO
+    notify: njose@ecloudcontrol.com
+build:
+    version: 1.0
+    env: DEV
+    build_file: none
+    output_files: output/*.zip
+    image_template: minio-1.0
+deploy:
+    context: neethu-cc/DEV
+    replicas: 1
+    port:
+    - 9000
+properties:
+    MINIO_ROOT_USER : minioadmin
+    MINIO_ROOT_PASSWORD :
+	   VAULT : MINIO_ROOT_PASSWORD
+    revision : 1
