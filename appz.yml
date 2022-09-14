@@ -16,5 +16,5 @@ deploy:
 properties:
     MINIO_ROOT_USER : minioadmin
     MINIO_ROOT_PASSWORD :
-	   VAULT : MINIO_ROOT_PASSWORD
-    revision : 1
+    	VAULT : MINIO_ROOT_PASSWORD
+    revision : 2
